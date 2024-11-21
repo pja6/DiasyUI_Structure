@@ -7,9 +7,11 @@ const allTheColors = await response.json();
 {
 
 allTheColors.colors.map( color => 
-
-    <p>{color.name}</p>
-    <p>{color.group}</p>
+<tr style={`background: #${color.hex}`}>
+<td>{color.name}</td>
+<td>{color.group}</td>
+</tr>
+   
 )
 
 }
