@@ -1,9 +1,17 @@
 ---
-// const response = await fetch('');
-// const allTheData = await response.json();
+const response = await fetch('https://www.csscolorsapi.com/api/colors');
+const allTheColors = await response.json();
 ---
 
 
+{
 
+allTheColors.colors.map( color => 
+
+    <p>{color.name}</p>
+    <p>{color.group}</p>
+)
+
+}
 
 
